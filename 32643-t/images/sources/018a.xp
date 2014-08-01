@@ -1,0 +1,55 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+int main()
+{
+  picture(P(0,-1), P(9,1), "4.5 x 1in");
+
+  begin();
+
+  double phi(1);
+
+  const P omega1(2.5,0);
+  const P omega2(polar(1.25,phi));
+  const P O2(6,0);
+
+  double rad(0.5);
+  arrow_width(2);
+  arc_arrow(P(0,0), rad, 0, phi);
+  arc_arrow(O2, rad, 0, M_PI+phi);
+
+  arrow_width(3);
+  arrow_inset(0.5);
+
+  arrow(P(0,0), omega1);
+  arrow(P(0,0), omega2);
+
+  arrow(O2, O2 + omega1);
+  arrow(O2, O2 - omega2);
+
+  //  font_size("footnotesize");
+  label(P(0,0), P(2,-4), "$O'$", b);
+  label(O2, P(4,-4), "$O'$", b);
+
+  //  font_size("scriptsize");
+  label(omega1, P(2,-4), "$2\\omega_1$", b);
+  label(O2+omega1, P(2,4), "$2\\omega_1$", t);
+
+  label(omega2, P(2,4), "$2\\omega_2$", t);
+  label(O2-omega2, P(2,-4), "$2\\omega_2$", b);
+
+  label(polar(rad, 0.5*phi), polar(2, 0.5*phi), "$\\varphi$", tr);
+  label(O2+polar(rad, M_PI_2+0.5*phi), polar(2, M_PI_2+0.5*phi), "$\\varphi$", tl);
+
+  dashed();
+  dash_size(6);
+  line(omega1, omega1 + omega2);
+  line(omega2, omega1 + omega2);
+
+  line(O2 + omega1, O2 + omega1 - omega2);
+  line(O2 - omega2, O2 + omega1 - omega2);
+
+  tikz_format();
+  end();
+}

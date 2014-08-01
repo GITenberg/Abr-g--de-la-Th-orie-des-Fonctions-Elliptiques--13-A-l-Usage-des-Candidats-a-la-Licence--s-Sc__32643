@@ -1,0 +1,34 @@
+%% Generated from 016a.xp on Mon May  3 18:16:02 EDT 2010 by
+%% ePiX-1.2.4
+%% 
+%%   Cartesian bounding box: [0,5] x [0,3]
+%%   Actual size: 1.75 x 1.25in
+%%   Figure offset: left by 0in, down by 0in
+%% 
+%% usepackages tikz
+%% 
+\xdefinecolor{rgb_000000}{rgb}{0,0,0}%
+\begin{tikzpicture}
+\pgfsetlinewidth{0.4pt}
+\useasboundingbox (0in,0in) rectangle (1.75in,1.25in);
+\draw (0in,0in)--(0.875in,0.625in)--(1.75in,1.25in);
+\draw (0in,0in)--(1.4in,1in);
+\pgfsetfillcolor{rgb_000000}
+\draw [fill](1.33033in,0.950236in)--(1.31917in,0.916759in)--
+  (1.4in,1in)--(1.29504in,0.950538in)--(1.33033in,0.950236in)--cycle;
+\draw (0in,0in)--(0.315in,0.225in);
+\draw [fill](0.245331in,0.175236in)--(0.234172in,0.141759in)--
+  (0.315in,0.225in)--(0.210044in,0.175538in)--(0.245331in,0.175236in)--cycle;
+\draw (0in,0in)--(1.085in,0.775in);
+\draw [fill](1.01533in,0.725236in)--(1.00417in,0.691759in)--
+  (1.085in,0.775in)--(0.980044in,0.725538in)--(1.01533in,0.725236in)--cycle;
+\draw (0in,0in)--(0.77in,0.55in);
+\draw [fill](0.700331in,0.500236in)--(0.689172in,0.466759in)--
+  (0.77in,0.55in)--(0.665044in,0.500538in)--(0.700331in,0.500236in)--cycle;
+\pgftext[at={\pgfpoint{0in}{-0.055348in}}] {\makebox(0,0)[t]{\hbox{\color{rgb_000000}\footnotesize $O$}}}
+\pgftext[at={\pgfpoint{1.75in}{1.19465in}}] {\makebox(0,0)[t]{\hbox{\color{rgb_000000}\footnotesize $U$}}}
+\pgftext[at={\pgfpoint{1.37604in}{0.942947in}}] {\makebox(0,0)[tl]{\hbox{\color{rgb_000000}\scriptsize $2\omega_1$}}}
+\pgftext[at={\pgfpoint{0.291038in}{0.167947in}}] {\makebox(0,0)[tl]{\hbox{\color{rgb_000000}\scriptsize $2\omega_2$}}}
+\pgftext[at={\pgfpoint{1.06104in}{0.717947in}}] {\makebox(0,0)[tl]{\hbox{\color{rgb_000000}\scriptsize $2\omega_3$}}}
+\pgftext[at={\pgfpoint{0.746038in}{0.492947in}}] {\makebox(0,0)[tl]{\hbox{\color{rgb_000000}\scriptsize $2\omega_4$}}}
+\end{tikzpicture}

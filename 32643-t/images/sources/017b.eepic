@@ -1,0 +1,20 @@
+%% Generated from 017b.xp on Mon May  3 18:20:06 EDT 2010 by
+%% ePiX-1.2.4
+%% 
+%%   Cartesian bounding box: [0,3] x [0,3]
+%%   Actual size: 1.5 x 1.5in
+%%   Figure offset: left by 0in, down by 0in
+%% 
+%% usepackages tikz
+%% 
+\xdefinecolor{rgb_000000}{rgb}{0,0,0}%
+\begin{tikzpicture}
+\pgfsetlinewidth{0.4pt}
+\useasboundingbox (0in,0in) rectangle (1.5in,1.5in);
+\draw (-0.257858in,-0.0966969in)--(0.5in,0.1875in)--(1.25786in,0.471697in);
+\draw (-0.195358in,0.278303in)--(0.5625in,0.5625in)--(1.32036in,0.846697in);
+\draw (-0.132858in,0.653303in)--(0.625in,0.9375in)--(1.38286in,1.2217in);
+\draw (-0.0322323in,-0.193394in)--(0.0625in,0.375in)--(0.157232in,0.943394in);
+\draw (0.467768in,-0.00589371in)--(0.5625in,0.5625in)--(0.657232in,1.13089in);
+\draw (0.967768in,0.181606in)--(1.0625in,0.75in)--(1.15723in,1.31839in);
+\end{tikzpicture}

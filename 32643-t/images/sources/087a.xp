@@ -1,0 +1,39 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+const P sz(5,3);
+const P O(0,0);
+
+P om1(4,0), om2(1.25,3), om3(-om1-om2);
+
+int main()
+{
+  picture(-sz, sz, "2 x 1.2in");
+
+  begin();
+
+  arrow_inset(0.25);
+
+  arrow(O, om1);
+  arrow(O, om2);
+  arrow(O, om3);
+
+  line(O, om1+om2);
+  line(om1, om1+om2);
+  line(om2, om1+om2);
+
+  line(om3, -om1);
+  line(om3, -om2);
+
+  line(om2, -om1);
+  line(om1, -om2);
+
+  label(O, P(2,-4), "$O'$", b);
+  label(om1, P(4, -2), "$2\\omega_1$", r);
+  label(om2, P(0, 2), "$2\\omega_2$", t);
+  label(om3, P(-2,0), "$2\\omega_3$", l);
+
+  tikz_format();
+  end();
+}

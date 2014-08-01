@@ -1,0 +1,38 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+const P sz(2,0.25);
+const P O(0,0);
+
+int main()
+{
+  picture(P(0,0), sz, "2.4 x 0.3in");
+
+  begin();
+
+  double rad(0.25), phi(M_PI_4);
+  P ctr(1), A(ctr + P(rad)), B(ctr - P(rad)), X(ctr + polar(rad, phi));
+
+  arrow_inset(0.25);
+  arrow_width(1.5);
+
+  line(O, P(xmax()));
+  arc(ctr, rad, 0, M_PI);
+  arc_arrow(ctr, 1.33*rad, M_PI/3, 3*M_PI/4);
+
+  label(O, P(0,-4), "$O$", b);
+  label(A, P(0,-4), "$A$", b);
+  label(B, P(0,-4), "$B$", b);
+
+  line(ctr, X);
+  label(X, P(2,2), "$x$", tr);
+  label(0.5*(O+B), P(0,2), "$\\frac{1}{k}$", t);
+  label(ctr, P(-2,2), "$1$", t);
+
+  font_size("footnotesize");
+  arc_measure(ctr, E_1, cis(phi), P(3,1), "$\\varphi$", r);
+
+  tikz_format();
+  end();
+}

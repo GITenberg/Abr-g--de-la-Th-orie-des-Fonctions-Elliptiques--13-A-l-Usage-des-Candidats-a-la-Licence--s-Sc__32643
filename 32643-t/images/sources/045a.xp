@@ -1,0 +1,45 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+const P sz(3.5,3);
+const P O(0,0);
+const double shrink(0.2);
+
+void sidearrow(const P& tail, const P& head)
+{
+  P tmp(head - tail);
+  tmp *= 1.0;
+  P shift(-pt_to_screen(8)/norm(tmp)*J(tmp));
+  arrow(tail + shrink*tmp + shift, head - shrink*tmp + shift);
+}
+
+int main()
+{
+  picture(P(0,0), sz, "1.05 x 0.9in");
+
+  begin();
+
+  P e3(1.5,0), e2(0,2.5), e1(sz);
+
+  const P dx(-2,-4);
+
+  arrow_inset(0.25);
+
+  line(e1, e2);
+  line(e2, e3);
+  line(e3, e1);
+
+  sidearrow(e1, e2);
+  sidearrow(e2, e3);
+  sidearrow(e3, e1);
+
+  label(e1, P(4,0), "$e_1$", r);
+  label(e2, P(-4,0), "$e_2$", l);
+  label(e3, P(0,-4), "$e_3$", b);
+
+  ddot(P(e3.x1(),1.75), P(4,0), "$z_0$", r);
+
+  tikz_format();
+  end();
+}

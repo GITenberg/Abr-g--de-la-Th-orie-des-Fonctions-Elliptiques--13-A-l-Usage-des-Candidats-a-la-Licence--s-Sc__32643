@@ -1,0 +1,41 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+const P sz(5,3);
+
+int main()
+{
+  picture(P(0,0), sz, "1.75 x 1.25in");
+
+  begin();
+
+  const P omega1(0.8*sz);
+  const P omega2(0.18*sz);
+  const P omega3(omega1 - omega2);
+  const P omega4(omega1 - 2*omega2);
+
+  const P dx(-2,-4);
+
+  arrow_inset(0.25);
+
+  line(P(0,0), sz);
+  arrow(P(0,0), omega1);
+  arrow(P(0,0), omega2);
+  arrow(P(0,0), omega3);
+  arrow(P(0,0), omega4);
+
+  font_size("footnotesize");
+  label(P(0,0), P(0,-4), "$O$", b);
+  label(sz, P(0,-4), "$U$", b);
+
+  font_size("scriptsize");
+
+  label(omega1, dx, "$2\\omega_1$", br);
+  label(omega2, dx, "$2\\omega_2$", br);
+  label(omega3, dx, "$2\\omega_3$", br);
+  label(omega4, dx, "$2\\omega_4$", br);
+
+  tikz_format();
+  end();
+}

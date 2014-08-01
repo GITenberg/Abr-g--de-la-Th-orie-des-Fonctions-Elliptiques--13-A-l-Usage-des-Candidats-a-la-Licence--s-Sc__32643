@@ -1,0 +1,31 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+int main()
+{
+  picture(P(-5,-5), P(5,5), "2.5 x 2.5in");
+
+  begin();
+
+  grid(P(-3,-3), P(3,3), 6, 6);
+
+  bold();
+  line(P(xmin(),0), P(xmax(),0));
+  line(P(0,ymin()), P(0,ymax()));
+
+  //  font_size("footnotesize");
+  label(P(xmax(),0), P(0,-4), "$x$", bl);
+  label(P(0,ymax()), P(-2,0), "$y$", bl);
+
+  dot_size(1.5);
+  //  font_size("scriptsize");
+  label(P(0,0), P(-2,-4), "$0$", bl);
+
+  ddot(P(0.3,1.2), P(1,1), "$\\Omega$", tr);
+  ddot(P(1.8,1.2), P(2,1), "$\\Omega''$", tl);
+  ddot(P(1.2,2.8), P(1,0), "$\\Omega'$", br);
+
+  tikz_format();
+  end();
+}

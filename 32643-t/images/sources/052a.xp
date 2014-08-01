@@ -1,0 +1,41 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+const P O(0,0);
+
+int main()
+{
+  picture(P(-1,-1), P(1,1), "1.5 x 1.5in");
+
+  begin();
+  degrees();
+  P e1(polar(0.55, 30)), e2(polar(0.75, 135)), e3(polar(0.75, 230));
+  P z1(cis(-20));
+
+  const P dx(-2,-4);
+
+  circle();
+  line(O, e1);
+  line(O, e2);
+  line(O, e3);
+  line(O, z1);
+
+  dot_size(12);
+  circ(e1, P(8,-8), "$e_1$", c);
+  circ(e2, P(8, 8), "$e_2$", c);
+  circ(e3, P(8,-8), "$e_3$", c);
+
+  dot_size(3);
+  ddot(e1);
+  ddot(e2);
+  ddot(e3);
+
+  label(O, P(4,-4), "$z_0$", b);
+  label(z1, P(2,0),"$z_1$", br);
+
+  label(cis(-45), P(1,-1),"$C$", br);
+
+  tikz_format();
+  end();
+}

@@ -1,0 +1,35 @@
+%% Generated from 087a.xp on Mon May  3 22:19:24 EDT 2010 by
+%% ePiX-1.2.4
+%% 
+%%   Cartesian bounding box: [-5,5] x [-3,3]
+%%   Actual size: 2 x 1.2in
+%%   Figure offset: left by 0in, down by 0in
+%% 
+%% usepackages tikz
+%% 
+\xdefinecolor{rgb_000000}{rgb}{0,0,0}%
+\begin{tikzpicture}
+\pgfsetlinewidth{0.4pt}
+\useasboundingbox (0in,0in) rectangle (2in,1.2in);
+\draw (1in,0.6in)--(1.8in,0.6in);
+\pgfsetfillcolor{rgb_000000}
+\draw [fill](1.71438in,0.6in)--(1.68584in,0.579244in)--
+  (1.8in,0.6in)--(1.68584in,0.620756in)--(1.71438in,0.6in)--cycle;
+\draw (1in,0.6in)--(1.25in,1.2in);
+\draw [fill](1.21707in,1.12097in)--(1.22525in,1.08664in)--
+  (1.25in,1.2in)--(1.18694in,1.10261in)--(1.21707in,1.12097in)--cycle;
+\draw (1in,0.6in)--(-0.05in,0in);
+\draw [fill](0.0243359in,0.0424776in)--(0.0388169in,0.0746577in)--
+  (-0.05in,0in)--(0.0594121in,0.038616in)--(0.0243359in,0.0424776in)--cycle;
+\draw (1in,0.6in)--(1.525in,0.9in)--(2.05in,1.2in);
+\draw (1.8in,0.6in)--(1.925in,0.9in)--(2.05in,1.2in);
+\draw (1.25in,1.2in)--(1.65in,1.2in)--(2.05in,1.2in);
+\draw (-0.05in,0in)--(0.075in,0.3in)--(0.2in,0.6in);
+\draw (-0.05in,0in)--(0.35in,0in)--(0.75in,0in);
+\draw (1.25in,1.2in)--(0.725in,0.9in)--(0.2in,0.6in);
+\draw (1.8in,0.6in)--(1.275in,0.3in)--(0.75in,0in);
+\pgftext[at={\pgfpoint{1.02767in}{0.544652in}}] {\makebox(0,0)[t]{\hbox{\color{rgb_000000}$O'$}}}
+\pgftext[at={\pgfpoint{1.85535in}{0.572326in}}] {\makebox(0,0)[l]{\hbox{\color{rgb_000000}$2\omega_1$}}}
+\pgftext[at={\pgfpoint{1.25in}{1.22767in}}] {\makebox(0,0)[b]{\hbox{\color{rgb_000000}$2\omega_2$}}}
+\pgftext[at={\pgfpoint{-0.077674in}{0in}}] {\makebox(0,0)[r]{\hbox{\color{rgb_000000}$2\omega_3$}}}
+\end{tikzpicture}

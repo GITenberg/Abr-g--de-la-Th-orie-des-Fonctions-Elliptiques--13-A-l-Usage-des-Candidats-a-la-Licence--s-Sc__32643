@@ -1,0 +1,39 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+int main()
+{
+  picture(P(0,0), P(3,3), "1.5 x 1.5in");
+
+  begin();
+
+  const P O(0,0);
+  const P A(2,0.75);
+  const P B(0.25,1.5);
+
+  line(O, 1.5*A);
+  line(O, 1.5*B);
+
+  arrow_inset(0.5);
+  arrow(O, A);
+  arrow(O, B);
+
+  dashed();
+  dash_size(6);
+  line(A, A+B);
+  line(B, A+B);
+
+  //  font_size("footnotesize");
+  label(O, P(0,-4), "$O'$", b);
+  label(A, P(0,-4), "$A$", b);
+  label(B, P(-2,2), "$B$", tl);
+  label(A+B, P(0,4), "$C$", t);
+
+  font_size("scriptsize");
+  label(0.5*A, P(0,-4), "$2\\omega_1$", br);
+  label(0.5*B, P(-2,2), "$2\\omega_2$", tl);
+
+  tikz_format();
+  end();
+}

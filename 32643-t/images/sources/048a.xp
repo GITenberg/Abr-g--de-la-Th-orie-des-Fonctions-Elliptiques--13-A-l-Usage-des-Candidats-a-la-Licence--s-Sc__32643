@@ -1,0 +1,35 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+const P O(0,0);
+
+int main()
+{
+  picture(P(-1,-1), P(1,1), "2 x 2in");
+
+  begin();
+
+  label(O, "\\includegraphics[width=2in,height=2in]{048raw.eps}");
+
+  label(P( 0.25, 0.4), P(2, 3), "$e_1$");
+  label(P(-0.75, 0.2), P(2, 0), "$e_2$", t);
+  label(P(-0.4, -0.8), P(2,-4), "$e_3$");
+
+  label(P(-0.2, -0.35),P(2,-2), "$z_0$");
+  label(P(0.85,  0.05),P(2,-2), "$z'$");
+
+  label(P( 0.3, -0.15), P(0,-2), "$L$", b);
+  label(P(-0.2,  0.2), P(2,-4), "$M$", r);
+  label(P(-0.8,  0.55), P(1,-1), "$N$");
+  label(P( 0.6,  0.65), "$P$");
+
+  /*
+  grid(20,20);
+
+  bold(Red());
+  grid(4,4);
+  */
+  tikz_format();
+  end();
+}

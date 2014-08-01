@@ -1,0 +1,24 @@
+%% Generated from 048a.xp on Mon May  3 21:55:54 EDT 2010 by
+%% ePiX-1.2.4
+%% 
+%%   Cartesian bounding box: [-1,1] x [-1,1]
+%%   Actual size: 2 x 2in
+%%   Figure offset: left by 0in, down by 0in
+%% 
+%% usepackages tikz
+%% 
+\xdefinecolor{rgb_000000}{rgb}{0,0,0}%
+\begin{tikzpicture}
+\pgfsetlinewidth{0.4pt}
+\useasboundingbox (0in,0in) rectangle (2in,2in);
+\pgftext[at={\pgfpoint{1in}{1in}}] {\makebox(0,0)[c]{\hbox{\color{rgb_000000}\includegraphics[width=2in,height=2in]{048raw.eps}}}}
+\pgftext[at={\pgfpoint{1.27767in}{1.44151in}}] {\makebox(0,0){\hbox{\color{rgb_000000}$e_1$}}}
+\pgftext[at={\pgfpoint{0.277674in}{1.2in}}] {\makebox(0,0)[b]{\hbox{\color{rgb_000000}$e_2$}}}
+\pgftext[at={\pgfpoint{0.627674in}{0.144652in}}] {\makebox(0,0){\hbox{\color{rgb_000000}$e_3$}}}
+\pgftext[at={\pgfpoint{0.827674in}{0.622326in}}] {\makebox(0,0){\hbox{\color{rgb_000000}$z_0$}}}
+\pgftext[at={\pgfpoint{1.87767in}{1.02233in}}] {\makebox(0,0){\hbox{\color{rgb_000000}$z'$}}}
+\pgftext[at={\pgfpoint{1.3in}{0.822326in}}] {\makebox(0,0)[t]{\hbox{\color{rgb_000000}$L$}}}
+\pgftext[at={\pgfpoint{0.827674in}{1.14465in}}] {\makebox(0,0)[l]{\hbox{\color{rgb_000000}$M$}}}
+\pgftext[at={\pgfpoint{0.213837in}{1.53616in}}] {\makebox(0,0){\hbox{\color{rgb_000000}$N$}}}
+\pgftext[at={\pgfpoint{1.6in}{1.65in}}] {\makebox(0,0)[c]{\hbox{\color{rgb_000000}$P$}}}
+\end{tikzpicture}

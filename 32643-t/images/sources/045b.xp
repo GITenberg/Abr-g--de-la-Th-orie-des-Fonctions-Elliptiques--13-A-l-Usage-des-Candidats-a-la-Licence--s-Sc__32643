@@ -1,0 +1,41 @@
+/* -*-ePiX-*- */
+#include "epix.h"
+using namespace ePiX;
+
+const P sz(1.5,2);
+const P O(0,0);
+
+double tm(sz.x2());
+
+P f(double t)
+{
+  return P(0.5*exp(0.3*t) + t*(0.125 + 0.05*t*t), t + 0.5);
+}
+
+int main()
+{
+  picture(P(0,0), sz, "1.5 x 2in");
+
+  begin();
+
+  const P dx(-2,-4);
+
+  arrow_inset(0.25);
+
+  plot(f, 0, tm, 20);
+
+  circle(f(0), 0.5);
+  dot(f(0), P(0,-4), "$u_0$", b);
+
+  circle(f(0.45), 0.25);
+  dot(f(0.45), P(5,-3), "$u_0'$", b);
+
+  arrow(f(0.8*tm), f(0.81*tm));
+  label(f(0.8*tm), P(2,-2), "$u_1$", br);
+  dot(f(tm), P(2,-2), "$u'$", br);
+
+  label(f(0.5*tm), P(-2,2), "$L$", tl);
+
+  tikz_format();
+  end();
+}
