@@ -1,0 +1,31 @@
+_repo: Abr-g--de-la-Th-orie-des-Fonctions-Elliptiques--13-A-l-Usage-des-Candidats-a-la-Licence--s-Sc__32643
+_version: 0.1.0
+covers:
+- cover_type: generated
+  image_path: cover.png
+creator:
+  author:
+    agent_name: Henry, Charles
+    birthdate: 1859
+    deathdate: 1926
+    gutenberg_agent_id: '35963'
+    url: http://www.gutenberg.org/2009/agents/35963
+    wikipedia: http://en.wikipedia.org/wiki/Charles_Henry_%28librarian%29
+description: ''
+gutenberg_bookshelf:
+- Mathematics
+- FR Sciences et Techniques
+gutenberg_issued: '2010-06-01'
+gutenberg_type: Text
+identifiers:
+  gutenberg: '32643'
+language: fr
+publisher: Project Gutenberg
+rights: Public domain in the USA.
+rights_url: http://creativecommons.org/about/pdm
+subjects:
+- !lcsh 'Elliptic functions'
+- !lcc 'QA'
+title: "Abrégé de la Théorie des Fonctions Elliptiques\r\nA l'Usage des Candidats\
+  \ a la Licence ès Sciences Mathématiques"
+url: http://www.gutenberg.org/ebooks/32643
