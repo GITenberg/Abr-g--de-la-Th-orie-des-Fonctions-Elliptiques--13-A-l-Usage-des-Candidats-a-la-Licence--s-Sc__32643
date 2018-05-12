@@ -12,6 +12,8 @@ creator:
     url: http://www.gutenberg.org/2009/agents/35963
     wikipedia: http://en.wikipedia.org/wiki/Charles_Henry_%28librarian%29
 description: ''
+edition_identifiers:
+  edition_id: http://www.gutenberg.org/ebooks/32643#Abr-g--de-la-Th-orie-des-Fonctions-Elliptiques--13-A-l-Usage-des-Candidats-a-la-Licence--s-Sc_
 gutenberg_bookshelf:
 - Mathematics
 - FR Sciences et Techniques
